@@ -21,5 +21,9 @@ public class MapTest2 {
 		
 		dataBinder.bind(mpvs);
 		System.out.println(model.getMap());
+		Map<Integer, Model> map1 = model.getMap();
+		for(Integer in : map1.keySet()){
+			System.out.println(in+"------"+map1.get(in).getName()+"*****"+map1.get(in).getAge());
+		}
 	}
 }

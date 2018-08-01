@@ -19,6 +19,10 @@ public class Test {
 	// 2.List-Map 符合类型
 	// listMapSimple[0]['key1']=a&listMapSimple[0]['key11']=b&listMapSimple[1]['key2']=c&listMapSimple[1]['key22']=c
 	public List<Map<String, String>> listMapSimple = new ArrayList<>();
+	
+	// List-Map 复合 
+	//listMapSimple[0]['key1'].name=a&listMapSimple[0]['key1'].age=11
+	public List<Map<String, Model>> listMapfuhe = new ArrayList<>();
 
 	/***************************************************************************************************************************************************/
 
@@ -93,6 +97,14 @@ public class Test {
 
 	public void setMapListfuhe(Map<String, List<Model>> mapListfuhe) {
 		this.mapListfuhe = mapListfuhe;
+	}
+
+	public List<Map<String, Model>> getListMapfuhe() {
+		return listMapfuhe;
+	}
+
+	public void setListMapfuhe(List<Map<String, Model>> listMapfuhe) {
+		this.listMapfuhe = listMapfuhe;
 	}
 
 }

@@ -33,13 +33,32 @@ public class MapTest {
 }
 class Model{
 	private Map<String,String> map;
-
+	
+	private String name = "";
+	private int age = 0;
+	
 	public Map<String, String> getMap() {
 		return map;
 	}
 
 	public void setMap(Map<String, String> map) {
 		this.map = map;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	}
 	
 }
